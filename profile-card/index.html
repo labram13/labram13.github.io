@@ -37,7 +37,7 @@
             <h1 class="font-medium text-xl text-center text-neutral-900">Sarah Dole</h1>
             <h2 class="font-normal text-sm text-center text-neutral-600">Front End Engineer @ Microsoft</h2>
           </div>
-          <div class="font-normal text-base text-center text-neutral-600 bg-white hover:bg-purple-500">
+          <div class="font-normal text-base text-center text-neutral-600 bg-white">
             I turn coffee into bugs which are fixed by someone else. Certified Stack Overflow and ChatGPT developer.
           </div>
       </div>
@@ -45,7 +45,12 @@
        <div class="flex flex-col gap-6 self-stretch">
          <button class="flex justify-center items-center gap-1.5 self-stretch bg-indigo-700 px-4 py-2.5 rounded font-medium text-base text-white">Contact me</button>
          
-        <div class="flex justify-center gap-4 self-stretch">
+        <div class="flex justify-center gap-4 self-stretch border border-transparent
+         hover:[&>button]:bg-neutral-50
+         focus-within:[&>button]:bg-neutral-50
+         focus-within:[&>button]:outline
+          focus-within:[&>button]:outline-2
+          focus-within:[&>button]:outline-indigo-300">
 
           <button class="w-[36px] h-[36px] flex justify-center items-center gap-2 p-2 rounded">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
