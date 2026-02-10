@@ -44,30 +44,11 @@ router.post('/login', (req, res) => {
   const accessToken = generateAccessToken(user)
   const refreshToken = jwt.sign(user, process.env.REFRESH_TOKEN_SECRET)
   refreshTokens.push(refreshToken)
-  res.json({accessToken, refreshToken})
+  res.json({accessToken: accessToken, refreshToken: refreshToken})
 
 
 })
 
-function authenticateToken(req, res, next) {
-  const authHeader = req.headers['authorization']
-  const token = authHeader && authHeader.split(' ')[1]
-
-  //check if token exists, if not send status 401
-  if (token == null) {
-    return res.sendStatus(401)
-  }
-
-  //verify token is legit
-  jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
-    if (err) return res.sendStatus(403)
-
-    req.user = user
-    console.log(user)
-    next()
-  })
-
-}
 
 function generateAccessToken(user) {
   return jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {expiresIn: '15s'})
