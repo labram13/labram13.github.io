@@ -1,12 +1,13 @@
 var createError = require('http-errors');
 var express = require('express');
+var mongoose = require('mongoose')
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var models = require('./model.js')
+// var models = require('./model.js')
 
 var apiRouter = require('./routes/api/api.js')
-
+mongoose.connect('mongodb+srv://labradml_db_user:iWyc5BnM8zg0QNSN@cluster0.cqp624z.mongodb.net/tododb')
 var app = express();
 
 // view engine setup
@@ -19,10 +20,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use((req, res, next) => {
-    req.models = models;
-    next();
-})
+// app.use((req, res, next) => {
+//     req.models = models;
+//     next();
+// })
 
 app.use('/api', apiRouter)
 

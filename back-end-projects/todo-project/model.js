@@ -15,18 +15,30 @@ async function connectToDB() {
   }
 }
 
-
 connectToDB();
 
 const userSchema = new mongoose.Schema({
-  name: String,
+  username: String,
   email: String,
   password: String
 });
 
-const User = mongoose.model('User', userSchema);
+models.User = mongoose.model('User', userSchema);
+
+const todoSchema = new mongoose.Schema({
+  userID: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
+  },
+  title: String,
+  description: String
+})
+
+models.Todo = mongoose.model('Todo', todoSchema);
+
 
 console.log("successfully connected to mongodb")
 
 
-module.export = models;
+module.exports = models;
