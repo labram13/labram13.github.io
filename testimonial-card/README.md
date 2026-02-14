@@ -1,11 +1,10 @@
 <!-- Use Ctrl/Cmd + Shift + V in VS Code to preview this Markdown file. -->
 
-# GreatFrontEnd Projects Testimonial Card Challenge
+# GreatFrontEnd Project Testimonial Card Challenge
 
 ## Tech stack and approach
 
-Tailwind CSS and HTML were used in order to complete this project. Content
-was grouped up into sections inside the profile card container. Once the items were grouped, we applied Tailwind CSS classes to each section to style to match testimonial card example. Figma was used in order to examine components for exact font-sizes, margin and padding, etc. 
+Tailwind CSS and HTML were used in order to complete this project. Grouped first row of content into 3 items on one row. Profile picture in one column. Profile name and handle into second column but split into two rows. Second row is the testimonial text. Justified everything to the left. Used provided figma file to provide styling.
 
 ## Useful resources and lessons learnt
 
