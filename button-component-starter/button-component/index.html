@@ -23,15 +23,114 @@
       /* You may write styles inside this <style> tag or within `css/style.css`. */
     </style>
   </head>
-  <body>
+  <body class="flex justify-center">
     <!-- Add your site or application content here -->
    <main>
-    <div class="flex flex-col justify-center mt-[200px]">
+    <div class="flex flex-col gap-10 mt-[100px]">
       <div class="flex flex-row flex-wrap items-center px-6 gap-5 ">
-        <button class="bg-indigo-700 text-white rounded py-2.5 px-3.5 text-sm font-med">Button CTA</button>
-        <button class="bg-indigo-700 text-white rounded py-3 px-4 text-sm font-med">Button CTA</button>
-
+        <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-indigo-800 bg-indigo-700 text-white rounded py-2.5 px-3.5 text-sm">Button CTA</button>
+        <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-indigo-800 flex items-center gap-2 bg-indigo-700 text-white rounded py-2.5 px-5  text-base">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
+        Button CTA
+        </button>
+        <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-indigo-800 flex items-center gap-2 bg-indigo-700 text-white rounded py-3 px-6  text-base">
+          Button CTA
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
+          </button>
+          <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-indigo-800 flex items-center gap-2 bg-indigo-700 text-white rounded py-4 px-6 text-lg">
+            Button CTA
+            </button>
+            <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-indigo-800 flex items-center gap-2 bg-indigo-700 text-white rounded p-4 text-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
       </div>
+
+      <div class="flex flex-row flex-wrap items-center px-6 gap-5 ">
+        <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-gray-100 border-[0.5px] border-gray-100 drop-shadow-md bg-white text-black rounded py-2.5 px-3.5 text-sm  ">Button CTA</button>
+        <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-gray-100 border-[0.5px] border-gray-100 drop-shadow-md flex items-center gap-2 bg-white text-black rounded py-2.5 px-5  text-base  ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
+        Button CTA
+        </button>
+        <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-gray-100 border-[0.5px] border-gray-200 drop-shadow-md flex items-center gap-2 bg-white text-black rounded py-3 px-6  text-base  ">
+          Button CTA
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
+          </button>
+          <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-gray-100 border-[0.5px] border-gray-100 drop-shadow-md flex items-center gap-2 bg-white text-black rounded py-4 px-6 text-lg  ">
+            Button CTA
+            </button>
+            <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-gray-100 border-[0.5px] border-gray-100 drop-shadow-md flex items-center gap-2 bg-white text-black rounded p-4 text-lg  ">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
+      </div>
+
+      <div class="flex flex-row flex-wrap items-center px-6 gap-5 ">
+        <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-gray-100 text-indigo-700 rounded py-2.5 px-3.5 text-sm  ">Button CTA</button>
+        <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-gray-100 flex items-center gap-2 text-indigo-700 rounded py-2.5 px-5 text-base  ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
+        Button CTA
+        </button>
+        <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-gray-100 flex items-center gap-2 text-indigo-700 rounded py-3 px-6  text-base  ">
+          Button CTA
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
+          </button>
+          <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-gray-100 flex items-center gap-2 text-indigo-700 rounded py-4 px-6 text-lg  ">
+            Button CTA
+            </button>
+            <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-gray-100 flex items-center gap-2 text-indigo-700 rounded p-4 text-lg  ">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
+      </div>
+
+      <div class="flex flex-row flex-wrap items-center px-6 gap-5 ">
+        <button class="focus:outline focus:outline-4 focus:outline-gray-200 text-indigo-700 rounded text-sm  ">Button CTA</button>
+        <button class="focus:outline focus:outline-4 focus:outline-gray-200 flex items-center gap-2 text-indigo-700 rounded  text-base  ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
+        Button CTA
+        </button>
+        <button class="focus:outline focus:outline-4 focus:outline-gray-200 flex items-center gap-2 text-indigo-700 rounded  text-base  ">
+          Button CTA
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
+          </button>
+          <button class="focus:outline focus:outline-4 focus:outline-gray-200 flex items-center gap-2 text-indigo-700 rounded text-lg  ">
+            Button CTA
+            </button>
+            <button class="focus:outline focus:outline-4 focus:outline-gray-200 flex items-center gap-2 text-indigo-700 rounded text-lg  ">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
+      </div>
+
+      <div class="flex flex-row flex-wrap items-center px-6 gap-5 ">
+        <button class="focus:outline focus:outline-4 focus:outline-gray-200 text-gray-700 rounded text-sm">Button CTA</button>
+        <button class="focus:outline focus:outline-4 focus:outline-gray-200 flex items-center gap-2 text-gray-700 rounded  text-base  ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
+        Button CTA
+        </button>
+        <button class="focus:outline focus:outline-4 focus:outline-gray-200 flex items-center gap-2 text-gray-700 rounded  text-base  ">
+          Button CTA
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
+          </button>
+          <button class="focus:outline focus:outline-4 focus:outline-gray-200 flex items-center gap-2 text-gray-700 rounded text-lg  ">
+            Button CTA
+            </button>
+            <button class="focus:outline focus:outline-4 focus:outline-gray-200 flex items-center gap-2 text-gray-700 rounded text-lg  ">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
+      </div>
+
+        <div class="flex flex-row flex-wrap items-center px-6 gap-5 ">
+          <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-red-700 bg-red-600 text-white rounded py-2.5 px-3.5 text-sm">Button CTA</button>
+          <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-red-700 flex items-center gap-2 bg-red-600  text-white rounded py-2.5 px-5  text-base">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
+          Button CTA
+          </button>
+          <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-red-700 flex items-center gap-2 bg-red-600  text-white rounded py-3 px-6  text-base">
+            Button CTA
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
+            </button>
+            <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-red-700 flex items-center gap-2 bg-red-600 text-white rounded py-4 px-6 text-lg">
+              Button CTA
+              </button>
+              <button class="focus:outline focus:outline-4 focus:outline-gray-200 hover:bg-red-700 flex items-center gap-2 bg-red-600 text-white rounded p-4 text-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
+        </div>
+
+    
+
 
     </div>
 
