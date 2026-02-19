@@ -11,3 +11,7 @@ HTML and CSS was used here along with javascript to fetch data for collections. 
 ## Lessons Learned
 
 Grid CSS is especially useful for creating layouts. Drawing the lay out first gives you a better sense of how many rows are required and which columns need to be split. grid-template was especially useful for when splitting columns. For example, urban oasis section and fresh fusion section were split into two rows by having the parent div having a display property of grid with a grid-template-rows of 1fr 1fr. This ends up spliting the right column into two items with equal amount of space being taken. I can see this method of grid styling for page layouts and can be a great foundation for any web app. 
+
+## Future plans
+
+Will start from scratch using React framework in order to optimize code to create views for both medium and small screens. This is a great opporunity for more grid practice as well. 
