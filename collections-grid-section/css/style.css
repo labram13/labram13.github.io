@@ -32,26 +32,41 @@ main {
   background-color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  gap: 1rem;
 }
 
 .col1 {
-  background: red;
   display: flex;
   flex-direction: column-reverse;
   padding: 1rem;
+  background-size: cover;
+  color:white;
   
 }
 
 .col2 {
-  background: red;
+  background: white;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.item-2, .item-3 {
+  color:white;
+  background-size: cover;
+  border-radius: 0.25rem;
   display: flex;
   flex-direction: column-reverse;
   padding: 1rem;
+  background-position-y: center;
+
 }
 
+
+
+
+
 h1{
-  background-color: red;
   margin: 0;
   font-size: 1.56rem;
   font-weight: 500;
@@ -70,14 +85,16 @@ p {
   padding: 0;
   margin:0;
   order: 1;
-  font-size: 1.25rem;
-  font-weight: bold;
+  font-size: 0.9rem;
+  font-weight: 400
 }
 
 /* border radius */
 h1, .col1, .col2 {
   border-radius: .25rem;
 }
+
+
 
 
 
