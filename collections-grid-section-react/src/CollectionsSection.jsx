@@ -6,26 +6,16 @@ function CollectionItems(props) {
 
     const [items, setItems] = useState([])
 
+    console.log(items)
+
+    //Note: data should be in parent and passed down to child
     useEffect(() => {
 
-        // const retrieveCollections = async () => {
-        //     const data = await fetch('https://www.greatfrontend.com/api/projects/challenges/e-commerce/collections')
-        //     const dataJson = await data.json();
-
-        //     setItems(dataJson.data)
-            
-        // }
-      
-        // retrieveCollections();
-   
-
+    
         fetch('https://www.greatfrontend.com/api/projects/challenges/e-commerce/collections')
             .then(response => response.json())
             .then(data => setItems(data.data))
     
-    
-
-
 
 
     }, [])
@@ -38,14 +28,6 @@ function CollectionItems(props) {
         </li>
     )
 
-   
-
-
-
-
-    
-
-    
 
     return (
         <>
